@@ -25,7 +25,7 @@ students = {
 @app.get("/api/{student_name}")
 def index(student_name:str):
     if student_name in students:
-        return {'student': students[student_name]['name']}
+        return {'student': students[student_name]}
         
     else:
         return {'students': students}
